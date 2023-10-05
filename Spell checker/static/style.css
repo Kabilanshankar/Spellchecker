@@ -1,0 +1,126 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e5e1e1;
+    color: #333;
+    margin: 20px;
+  }
+  
+  #user_prompt {
+    max-width: 600px;
+    margin: 150px auto;
+    height:150px;
+    padding: 20px;
+    border: 1px solid #090909;
+    background-color: #e5d5d5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .headline {
+    color: #007bff;
+    padding-left: 30%;
+    padding-top: 2px;
+  }
+  
+  form {
+    display: flex;
+    align-items: center;
+  }
+  
+  label {
+    margin-right: 10px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #148a95;
+    border-radius: 4px;
+    padding-left: 10%;
+  }
+  
+  button {
+    padding: 8px 20px;
+    font-size: 16px;
+    background-color: #e5d5d5;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  h2 {
+    color: #1b9ff7;
+    margin-top: auto;
+    align-self: auto;
+    padding-left: 30%;
+    padding-right: auto;
+
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  
+  /* Optional: Add some margin between the result and user_prompt divs */
+  #user_prompt {
+    margin-bottom: 20px;
+    
+  }
+  
+  #output{
+    background-color: #e5d5d5;
+    max-width: 600px;
+    margin: 0 auto;
+    height: auto;
+    padding: 20px;
+    border: 1px solid #120707;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  
+
+/*separate button*/
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 30%;
+  margin-top: 2px;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  padding-left: 5%;
+}
+
+/* Style the buttons */
+button {
+  padding: 8px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Optional: Hover effect on buttons */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* margin to the "Clear" button */
+button:last-child {
+  margin-left: 20px; /* Adjust the margin as needed */
+}
+

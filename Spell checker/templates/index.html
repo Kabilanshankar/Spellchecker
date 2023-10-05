@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+    <title id="head">Spell Checker</title>
+</head>
+<body>
+    <div id="user_prompt">
+        <h1 class="headline">Spell Checker</h1>
+        <form action="/spell_check" method="post">
+            <div class="input-container">
+                <input type="text" id="user_input" name="user_input" placeholder="Enter text here to check">
+                    <div class="button-container">
+                        <button type="submit" value="Check Spelling">Submit</button>
+                        <button type="button" value="Clear Text" onclick="clearInput()">Clear</button>
+                    </div>
+            </div>
+        </form>
+    </div>
+    
+    <div id="output">
+        {% if result %}
+            <h2>Spell Check Results:</h2>
+                {% for item in result %}
+                    <p>Original word: {{ item[0] }}, Corrected word: {{ item[1] }}</p>
+            {% endfor %}
+        {% endif %}
+    </div>
+        
+</body>
+</html>
